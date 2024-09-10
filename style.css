@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+/* Apply smooth scroll behavior to the entire page */
+html {
+  scroll-behavior: smooth;
+}
+/* Add this CSS to create a visual divider between sections */
+
+
+
+/* Style the scroll bar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+body {
+  background: #000000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/melcow.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+padding: 100px 5%;
+}
+
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+ }
+.logo {
+  width: 100px;
+  position: absolute;
+  
+  top: 10px; /* Adjust the top position as needed */
+  left: 10px; /* Adjust the left position as needed */
+  
+}
+
+
+
+/* Position the navigation links to the top right */
+nav ul {
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+}
+
+/* Style the navigation links */
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px; /* Adjust margin to separate the links */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #00ffff;
+  position: absolute;
+  right: 0; /* Position the underline to the right */
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: -20px; /* Adjust the margin-top for precise positioning */
+  margin-left: -60px; /* Move to the top-left corner */
+  font-size: 30px; /* Reduce the font size to your preferred value */
+  background-attachment: fixed;
+}
+
+.header-text h1 {
+  margin-top: 20px;
+  font-size: 50px; /* Reduce the font size to your preferred value */
+}
+
+.header-text span {
+  color: #00ffff;
+}
+
+/* Add this CSS for the stacked card animation */
+.section-card {
+  perspective: 1000px;
+  overflow: hidden;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+#about {
+    padding: 50px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+flex-basis: 40%;
+}
+.about-col-1 img{
+width: 75%;
+border-radius: 15px;
+}
+.about-col-2{
+flex-basis: 60%;
+}
+.subtitle{
+font-size: 50px;
+font-weight: 500;
+color: #fff;
+ }
+.tab-titles{
+display: flex;
+margin: 20px 0 40px;
+ }
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+/* Add this CSS code to position the globe icon to the top-right corner */
+.top-right {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.tab-links::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #00ffff;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.55s; /* Added 's' for seconds */
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+.tab-contents ul li span
+{
+color:#9CE4DD;
+font-size:14px;
+}
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* -----------------contact---------------- */
+
+/* Center-align the content in both .contact-left and .contact-right */
+.contact-left {
+  margin-top: -125px;
+}
+.contact-left, .contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  text-align: left;
+}
+
+/* Update the margin for better spacing between elements */
+.contact-left p {
+  margin-top: 15px; /* Reduced margin-top */
+  color: #00ffff;
+  margin-bottom: 10px; /* Added margin-bottom */
+}
+
+/* Center-align the social icons */
+/* Center-align the social icons */
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the social icons */
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin: 0 10px;
+  color: #ababab;
+  transition: color 0.3s, transform 0.3s; /* Add transition for color and transform */
+}
+
+/* Change color and apply a transformation on hover */
+.social-icons a:hover {
+  color: #00ffff; /* Change the color on hover */
+  transform: scale(1.1); /* Apply a slight scale (zoom) effect on hover */
+}
+
+
+
+/* Center-align the "Download CV" button */
+.btn-rectangular {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 15px; /* Added margin-top for spacing */
+}
+
+/* Change background color on hover */
+.btn-rectangular:hover {
+  background-color: #00ffff;
+}
+
+/* Center-align the form content */
+.contact-right form {
+  width: 100%;
+  
+}
+
+/* Center-align the form inputs and textarea */
+form input,
+form textarea {
+  width: 80%; /* Adjust the width as needed */
+  max-width: 400px; /* Limit the maximum width */
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0; /* Center-align the inputs and textarea vertically */
+  color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+/* ---------------Copyright Notice------------ */
+/* Copyright Notice */
+.copyright {
+  background-color: #000000; /* Background color */
+  color: #fff; /* Text color */
+  padding: 10px 0; /* Adjust padding as needed */
+  text-align: center;
+  font-size: 14px;
+  margin-bottom;: 100px /* Reset margin to ensure no external spacing */
+}
+
+
+.copyright a {
+  color: #00ffff; /* Link color */
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+/* Center the entire copyright notice */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure the container covers the full height */
+}
+#msg{color: #61b752;
+margin-top: 0px;
+display: block;
+}
+nav .fa-solid{
+  display: none;
+}
+/*-----------small screen----------*/
+@media only screen and (max-width: 600px)
+{
+#header {
+background-image: url(images/me.png);
+background-attachment: scroll;
+}
+.header-text{
+margin-top: 100%; 
+font-size: 16px;
+}
+.header-text h1{
+font-size: 20px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px; /* Adjust margin to separate the links */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+.sub-title{
+font-size: 10px;
+}
+.about-col-1, about -col-2 
+{
+flex-basis: 100%;
+}
+nav .fa-solid{
+  display: block;
+  font-size: 25px;
+}
+nav ul{
+  background: #01076d;
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 200px;
+  height: 100vh;
+  padding-top: 50px;
+  z-index: 2;
+}
+nav ul li{
+  display: block;
+  margin: 25px;
+}
+nav ul .fa-solid{
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+}
+.contact-left, .contact-right {
+
+  flex-basis: 60%;
+  align-items:start; /* Center-align items */
+  text-align: center; /* Center-align text */
+}
+#contact {
+  flex-direction:column;
+}
+}
+.sub-title{
+  font-size: 30px;
+}
+form input,
+form textarea {
+  width: 70%; /* Adjust the width as needed */
+  max-width: 250px; /* Limit the maximum width */
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 10px;
+  margin-bottom: 20px; /* Center-align the inputs and textarea vertically */
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
