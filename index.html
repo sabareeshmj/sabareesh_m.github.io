@@ -4,103 +4,175 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        nav {
-            text-align: center;
-            margin: 1rem 0;
-        }
-
-        nav a {
-            color: #333;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 2rem;
-            background-color: #fff;
-            margin: 1rem auto;
-            max-width: 800px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
-            color: #fff;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
 </head>
 <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/login.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i></li>
+                </ul>
+                <div id="menu-icon-container" class="top-right">
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                  </div>
+                
+            </nav>
+<div class="header-text">
+<p>Data Analyst</p>
+<h1>Hy,I'm <span>Anandha Krishnan</span><br> From India</h1>
+        </div>
+    </div>
 
-    <header>
-        <h1>My Portfolio</h1>
-        <p>Welcome to my personal portfolio website!</p>
-    </header>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/that.png">
+            </div>
+            <div class="about-col-2">
+               <h1 class="subtitle">About Me</h1>
+<p>Seeking a challenging career with a reputable organization that provides an
+opportunity to revamp my technical skills and ability in the field of
+Mathematics and Computer Science.
+A quick learner with necessary communication and leadership qualities also a friendly and cooperative person. Interested in volunteer work/community involvement, sports mainly football, and cricket, and music.</p>
+<div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+<p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+<p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+<div class="tab-contents active-tab" id='skills'>
+<ul><li><span>UI/UX</span></br>design web app interfaces</li>
+<li><span>DATA ANALYST</span></br>Ability to uncover insights from large datasets</li>
+<li><span>MACHINE LEARNING</span></br>basic knowledge about ml and ai</li>
+</ul>
+</div>
+<div class="tab-contents" id='education'>
+<ul><li><span>MASTERS IN COMPUTER SCIENCE</span></br>Currently Persuing, at Sree Narayana College, Cherthala under University of
+Kerala</li>
+<li><span>BACHELORS IN MATHEMATICS </span></br>Passed with 7.2 CGPA, Studied at Sanatana Dharma College under University
+of Kerala  </li>
+<li><span>HIGH SCHOOL EDUCATION
+</span></br>Passed with 9.8 CGPA, Believers Church English Medium. The Central Board
+of Secondary Education</li>
+</ul>
+</div>
+<div class="tab-contents" id='certificates'>
+<ul><li><span>GOOGLE DATA ANALYTICS</span></br>Completed Google Data Analytics Professional Certificate, authorized by
+Google and offered through Coursera </li>
+<li><span>NATIONAL CADET CORPS</span></br>Passed the NCC Cadet ‘C’ Certificate Exam held in 2021, under the authority of
+Ministry of Defence, Government of India</li>
+<li><span>DATA SCIENCE PYTHON</span></br>Completed an online course Foundations of Data Science: K-Means Clustering
+in Python authorized by University of London, Goldsmiths, University of London
+and offered through Coursera .</li>
+</ul>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<!--------------------------contact---------------------------->
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm [Your Name], a passionate web developer with experience in creating dynamic and responsive websites. I enjoy building everything from small business sites to rich interactive web apps.</p>
-    </section>
+<div id="contact" style="display: flex; justify-content: space-between;">
+  <div class="container" style="flex: 1;">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i> anandhakrishnanalpy@gmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i> 7356218038</p>
+        <div class="social-icons">
+          <a href="https://m.facebook.com/Anandhuzz"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/An_and_h"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com/_.an._.and._/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/anandha-krishnan-s-61394a275/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="my-cv1.pdf" download class="btn btn-rectangular">Download CV</a>
+      </div>
+    </div>
+  </div>
+  <div class = "contact-right" style="flex: 1;">
+    <form name='submit-to-google-sheet'>
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn btn-rectangular">Submit</button>
+    </form>
+	<span id="msg"></span>
+  </div>
+</div>
+<footer class="copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>&copy; 2023 ANANDHVERSE. All Rights Reserved.</p>
+        <p>Designed with <i class="fas fa-heart"></i> by ANANDHA KRISHNAN S</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of my favorite projects:</p>
-        <ul>
-            <li><strong>Project 1:</strong> A responsive website for a local business.</li>
-            <li><strong>Project 2:</strong> An e-commerce platform with full-stack development.</li>
-            <li><strong>Project 3:</strong> A personal blog with a custom CMS.</li>
-        </ul>
-    </section>
+<script>
+var tablinks = document.getElementsByClassName('tab-links');
+var tabcontents = document.getElementsByClassName('tab-contents');
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>I have experience with the following technologies:</p>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React, Angular, Vue.js</li>
-            <li>Node.js, Express.js</li>
-            <li>Python, Django, Flask</li>
-            <li>SQL, MongoDB</li>
-        </ul>
-    </section>
+function opentab(tabname) {
+  for (tablink of tablinks) {
+    tablink.classList.remove("active-link");
+  }
+  for (tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+  }
+event. currentTarget.classList. add("active-link");
+document. getElementById(tabname).classList.add("active-tab")
+}
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to get in touch, please feel free to email me at <a href="mailto:yourname@example.com">yourname@example.com</a>.</p>
-    </section>
+// You don't need to redeclare tablinks here.
+</script>
 
-    <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-    </footer>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxHLbdkcNR05raeBOASmQYNtzdgdA2_52Dop50QpG4bTTS0cCTfPqZ_nEdmBvPdN4ybbw/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        if (response.ok) {
+          msg.innerHTML = "Message sent successfully";
+          setTimeout(function () {
+            msg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        } else {
+          throw new Error('Network response was not ok');
+        }
+      })
+      .catch(error => {
+        console.error('Error!', error.message);
+      });
+  });
+</script>
+<script>
+  var sidemenu = document.getElementById("sidemenu")
+  function openmenu() {
+  sidemenu.style.right = "0";
+}
+
+function closemenu() {
+  sidemenu.style.right = "-200px"; // Adjust the value as needed
+}
+
+</script>
 
 </body>
-        </html>
+</html>
